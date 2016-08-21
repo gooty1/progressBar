@@ -1,0 +1,19 @@
+{
+  "name": "ProgressBar",
+  "version": "0.0.0",
+  "authors": [
+    "James Zhan"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "bootstrap-sass": "*"
+  }
+}

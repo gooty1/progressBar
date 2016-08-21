@@ -1,0 +1,51 @@
+/* Variables*/
+
+$lightGrey: #d3d3d3;
+$lightBlue: #00BCD4;
+$lightGreen: #8BC34A;
+
+$progress-bar-header-padding: 10px;
+$progress-bar-height: 20px;
+$progress-bar-undone: $lightBlue;
+$progress-bar-done: $lightGreen;
+$progress-bar-margin-bottom: 20px;
+$progress-bar-container-border: 1px solid $lightGrey;
+
+.progress-bar-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-group__header {
+  background-color: $lightGrey;
+  padding: $progress-bar-header-padding;
+}
+
+.progress-bar-group__content {
+  border-radius: 0;
+}
+
+.progress-bar-group__progressContainer {
+  border: $progress-bar-container-border;
+  margin-bottom: $progress-bar-margin-bottom;
+}
+
+.progress-bar-group--done {
+  .progress-bar-group__progress {
+    background-color: $progress-bar-done;
+  }
+}
+
+.progress-bar-group__progress {
+  background-color: $progress-bar-undone;
+  height: $progress-bar-height;
+}
+
+.progress-bar-group__description {
+  text-align: center;
+}
+
+.glyphicon-success {
+  color: $lightGreen;
+}

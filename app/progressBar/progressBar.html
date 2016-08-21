@@ -1,0 +1,28 @@
+<div class="modal fade progress-bar-group" ng-class="{'in' : !!vm.config, 'hide' : !vm.config}">
+    <div class="modal-dialog">
+        <div class="modal-content progress-bar-group__content" ng-class="{'progress-bar-group--done': vm.isProgressBarFinished}">
+            <div class="modal-header progress-bar-group__header">
+                <button type="button" class="close" ng-click="vm.close()" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">Progress</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="progress-bar-group__progressContainer">
+                    <div class="progress-bar-group__progress" ng-style="vm.progressStyle"></div>
+                </div>
+
+                <div class="progress-bar-group__description" ng-switch on="vm.isProgressBarFinished">
+                    <h4 ng-switch-when="true">
+                        This task is {{vm.percentage}} completed
+                        <span class="glyphicon glyphicon-ok glyphicon-success" ng-class="{'hide': !vm.isProgressBarFinished}"></span>
+                    </h4>
+                    <h4 ng-switch-default>Progress {{vm.percentage}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-backdrop fade" ng-class="{'in' : !!vm.config, 'hide' : !vm.config}"></div>

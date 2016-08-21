@@ -1,0 +1,32 @@
+{
+  "name": "ProgressBar",
+  "version": "1.0.0",
+  "description": "Progress Bar",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "start": "http-server -a localhost -p 9000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "James Zhan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "*",
+    "http-server": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*",
+    "grunt": "*",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "*",
+    "grunt-sass": "*",
+    "http-server": "*",
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*",
+    "node-sass": "*"
+  }
+}
